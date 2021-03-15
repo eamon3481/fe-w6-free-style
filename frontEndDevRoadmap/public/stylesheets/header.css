@@ -34,10 +34,14 @@ header {
   .header__detail ul {
     border: 0.1rem solid;
     margin-bottom: 1.2rem;
-    padding: 1rem 0.5rem;
+    padding: 1rem 1.5rem;
     border-radius: 1rem; }
     .header__detail ul li {
-      margin-bottom: 0.5rem; }
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center; }
+      .header__detail ul li strong {
+        margin-right: 0.5rem; }
 
 .trigle {
   bottom: -5rem;
