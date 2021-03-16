@@ -1,21 +1,38 @@
-import { toggles, type, step } from "./components/units.js";
-class MainView {
-  constructor(parents, type, text, subtext, toggle, step) {
+import { type } from "./components/units.js";
+import _ from "./components/utils.js";
+
+export default class MainView {
+  constructor(parents, type, text, subtext, children) {
     this.type = type;
     this.text = text;
     this.subtext = subtext;
-    this.toggle = toggle;
-    this.step = step;
+    this.children = children;
     this.parents = parents;
   }
 
   init() {
     if (this.type === type.MAIN) {
-      this.parents.innerHTML = this.render(this.text, this.step, this.toggle);
+      const $el = this.CreateSection(this.text);
+      this.parents.appendChild($el);
+      if (this.children) {
+        $el.appendChild(this.CreateContainer());
+      }
     }
   }
 
-  render(text, step, toggle) {
-    return `<section class="${text}"><span> class="${toggle}">${text}</span>${text}</section>`;
+  CreateContainer() {
+    return _.genEl("DIV", {
+      classNames: ["Container"],
+    });
+  }
+
+  CreateSection(text) {
+    return _.genEl("SECTION", {
+      template: this.SectionTemplate(text),
+    });
+  }
+
+  SectionTemplate(text) {
+    return `<span class="main">${text}</span>`;
   }
 }

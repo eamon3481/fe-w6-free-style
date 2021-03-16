@@ -1,12 +1,20 @@
-import { toggle } from "./components/units.js";
-class View {
-  constructor(type, text, subtext, toggle, step) {
-    this.type = type;
-    this.text = text;
-    this.subtext = subtext;
-    this.toggle = toggle;
-    this.step = step;
+import MainVeiw from "./MainVeiw.js";
+export default class View {
+  constructor(data, parents) {
+    this.data = data;
+    this.parents = parents;
   }
 
+  init() {
 
+    this.data.forEach((mainData) => {
+      new MainVeiw(
+        this.parents,
+        mainData.type,
+        mainData.title,
+        mainData.subtext,
+        mainData.children
+      ).init();
+    });
+  }
 }

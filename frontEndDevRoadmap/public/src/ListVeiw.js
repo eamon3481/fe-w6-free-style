@@ -9,9 +9,9 @@ class ListView {
     this.parents = parents;
   }
 
-  init() {
+  init() { 
     if (this.type === type.LIST) {
-      this.parents.innerHTML = this.render(this.text, this.step, this.toggle);
+      this.parents.innerHTML += this.render(this.text, this.step, this.toggle);
     }
   }
 
