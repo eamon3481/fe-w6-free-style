@@ -52,3 +52,8 @@ header {
   position: absolute;
   left: 0;
   z-index: 10; }
+
+.line {
+  position: absolute;
+  top: 5rem;
+  z-index: 100; }

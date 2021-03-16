@@ -7,7 +7,6 @@ const DATA_URL = SERVER_URL + "/sample.json";
 async function initViews() {
   const $body = _.$("body");
   const view = await fetch(DATA_URL) //
-  
     .then((res) => res.json())
     .then((json) => new View(json.map, _.$("body")));
 

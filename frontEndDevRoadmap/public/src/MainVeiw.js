@@ -12,18 +12,13 @@ export default class MainView {
 
   init() {
     if (this.type === type.MAIN) {
-      const $el = this.CreateSection(this.text);
-      this.parents.appendChild($el);
+      const $section = this.CreateSection(this.text);
+      this.parents.appendChild($section);
+      $section.appendChild(this.CreateTri());
       if (this.children) {
-        $el.appendChild(this.CreateContainer());
+        $section.appendChild(this.CreateContainer());
       }
     }
-  }
-
-  CreateContainer() {
-    return _.genEl("DIV", {
-      classNames: ["Container"],
-    });
   }
 
   CreateSection(text) {
@@ -31,8 +26,17 @@ export default class MainView {
       template: this.SectionTemplate(text),
     });
   }
-
+  CreateContainer() {
+    return _.genEl("DIV", {
+      classNames: ["Container"],
+    });
+  }
+  CreateTri() {
+    return _.genEl("DIV", {
+      classNames: ["trigle"],
+    });
+  }
   SectionTemplate(text) {
-    return `<span class="main">${text}</span>`;
+    return `<div class="main"><span>${text}</span></div>`;
   }
 }
