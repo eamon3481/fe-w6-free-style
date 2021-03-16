@@ -4,116 +4,133 @@
         {
             "title": "인터넷",
             "type": "main",
+            "subtext": null,
             "children": [
                 {
                     "title": "인터넷은 어떻게 작동될까요?",
                     "type": "list",
                     "subtext": null,
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 },
                 {
                     "title": "HTTP는 무엇일까요?",
                     "type": "list",
                     "subtext": null,
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 },
                 {
                     "title": "브라우져의 동작원리",
                     "type": "list",
                     "subtext": null,
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 },
                 {
                     "title": "DNS와 작동원리",
                     "type": "list",
                     "subtext": null,
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 },
                 {
                     "title": "Domain Name은 무엇일까요?",
                     "type": "list",
                     "subtext": null,
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 },
                 {
                     "title": "hosting은 무엇일까요?",
                     "type": "list",
                     "subtext": null,
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 }
             ]
         },
         {
             "title": "HTML",
             "type": "main",
+            "subtext": null,
             "children": [
                 {
                     "title": "기초배우기",
                     "type": "list",
                     "subtext": null,
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 },
                 {
                     "title": "의미론적(Semantic)인 HTML 작성",
                     "type": "list",
                     "subtext": null,
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 },
                 {
                     "title": "폼과 유효성 검사",
                     "type": "list",
                     "subtext": null,
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 },
                 {
                     "title": "컨벤션과 모범 사례(Best Practice)",
                     "type": "list",
                     "subtext": null,
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 },
                 {
                     "title": "접근성",
                     "type": "list",
                     "subtext": null,
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 },
                 {
                     "title": "기본 SEO",
                     "type": "list",
                     "subtext": null,
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 }
             ]
         },
         {
             "title": "CSS",
             "type": "main",
+            "subtext": null,
             "children": [
                 {
                     "title": "기초 배우기",
                     "type": "list",
                     "subtext": null,
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 },
                 {
                     "title": "레이아웃 만들기",
                     "type": "list",
                     "subtext": null,
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 },
                 {
                     "title": "반응형 디자인과 Media Queries",
@@ -141,42 +158,46 @@
         {
             "title": "Javascript",
             "type": "main",
+            "subtext": null,
             "children": [
                 {
                     "title": "구문(Syntax)과 기본문법",
                     "ty,pe": "list",
                     "subtext": null,
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 },
                 {
                     "title": "DOM 조작 방법 배우기",
                     "type": "list",
                     "subtext": null,
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 },
                 {
                     "title": "Fetch API / Ajax (XHR) 배우기",
                     "type": "list",
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 },
                 {
                     "title": "모듈러 javascript와 ES6+ 배우기",
                     "type": "list",
                     "subtext": null,
-                    "subtext": null,
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 },
                 {
                     "title": "개념 이해하기",
                     "type": "list",
-                    "subtext": null,
                     "subtext": "hoisting, Event Bubbling, scope, prototype,Shadow Dom, strict",
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 }
             ]
         },
@@ -190,7 +211,8 @@
                     "type": "main",
                     "subtext": null,
                     "toggle": null,
-                    "step": null
+                    "step": null,
+                    "children": null
                 },
                 {
                     "title": "저장소 호스팅 서비스",
@@ -204,21 +226,24 @@
                             "type": "list",
                             "subtext": null,
                             "toggle": null,
-                            "step": null
+                            "step": null,
+                            "children": null
                         },
                         {
                             "title": "Gitlab",
                             "type": "list",
                             "subtext": null,
                             "toggle": null,
-                            "step": null
+                            "step": null,
+                            "children": null
                         },
                         {
                             "title": "Bitbucket",
                             "type": "list",
                             "subtext": null,
                             "toggle": null,
-                            "step": null
+                            "step": null,
+                            "children": null
                         }
                     ]
                 }
@@ -227,34 +252,42 @@
         {
             "title": "웹 보안 지식",
             "type": "main",
-            "children":{
+            "subtext": null,
+            "children": {
                 "title": "최소한의 기본 지식은 충분히 습득하세요.",
                 "type": "box",
-                "children" :[
+                "children": [
                     {
                         "title": "HTTPS",
-                            "type": "list",
-                            "subtext": null,
-                            "toggle": null,
-                            "step": null
-                    },      {
+                        "type": "list",
+                        "subtext": null,
+                        "toggle": null,
+                        "step": null,
+                        "children": null
+                    },
+                    {
                         "title": "OWASP 보안 취약점",
-                            "type": "list",
-                            "subtext": null,
-                            "toggle": null,
-                            "step": null
-                    },      {
+                        "type": "list",
+                        "subtext": null,
+                        "toggle": null,
+                        "step": null,
+                        "children": null
+                    },
+                    {
                         "title": "컨텐츠 보안 정책",
-                            "type": "list",
-                            "subtext": null,
-                            "toggle": null,
-                            "step": null
-                    },      {
+                        "type": "list",
+                        "subtext": null,
+                        "toggle": null,
+                        "step": null,
+                        "children": null
+                    },
+                    {
                         "title": "CORS",
-                            "type": "list",
-                            "subtext": null,
-                            "toggle": null,
-                            "step": null
+                        "type": "list",
+                        "subtext": null,
+                        "toggle": null,
+                        "step": null,
+                        "children": null
                     }
                 ]
             }
@@ -262,22 +295,26 @@
         {
             "title": "패키지 매니저",
             "type": "main",
-            "children": "children":{
+            "subtext": null,
+            "children": {
                 "title": "npm,yarn 모두 좋습니다. 어떤 것을 배우든 별 차이 없습니다.",
                 "type": "box",
-                "children" :[
+                "children": [
                     {
                         "title": "npm",
-                            "type": "list",
-                            "subtext": null,
-                            "toggle": null,
-                            "step": null
-                    },      {
+                        "type": "list",
+                        "subtext": null,
+                        "toggle": null,
+                        "step": null,
+                        "children": null
+                    },
+                    {
                         "title": "yarn",
-                            "type": "list",
-                            "subtext": null,
-                            "toggle": null,
-                            "step": null
+                        "type": "list",
+                        "subtext": null,
+                        "toggle": null,
+                        "step": null,
+                        "children": null
                     }
                 ]
             }
@@ -285,65 +322,50 @@
         {
             "title": "CSS 구조(Architecture)",
             "type": "main",
-            "subtext": "최신 프레임워크와 CSS-in-JS를 사용한다면 걱정할 필요가 없지만 그럼에도 불구하고 BEM 방법론에 익숙해지는 것은 좋은 생각입니다."
+            "subtext": "최신 프레임워크와 CSS-in-JS를 사용한다면 걱정할 필요가 없지만 그럼에도 불구하고 BEM 방법론에 익숙해지는 것은 좋은 생각입니다.",
+            "children": null
         },
         {
             "title": "CSS 전처리기 (CSS preprocessor)",
             "type": "main",
-            "subtext": "최신 프레임워크들이 CSS-in-JS를 향해 더욱 더 밀어 붙이고 있어 전처리기들이 필요할지 모르겠지만 여전히 알고있는 것은 좋습니다."
+            "subtext": "최신 프레임워크들이 CSS-in-JS를 향해 더욱 더 밀어 붙이고 있어 전처리기들이 필요할지 모르겠지만 여전히 알고있는 것은 좋습니다.",
+            "children": null
         },
         {
             "title": "빌드 도구",
-            "type": "main"
+            "type": "main",
+            "subtext": null,
+            "children": null
         },
         {
             "title": "프레임워크 선택",
-            "type": "main"
+            "type": "main",
+            "subtext": null,
+            "children": null
         },
         {
             "title": "현대의 CSS",
-            "type": "main"
+            "type": "main",
+            "subtext": null,
+            "children": null
         },
         {
             "title": "웹 컴포넌트",
-            "type": "main"
+            "type": "main",
+            "subtext": null,
+            "children": null
         },
         {
             "title": "CSS 프레임워크",
-            "type": "main"
+            "type": "main",
+            "subtext": null,
+            "children": null
         },
         {
             "title": "앱을 테스트 하세요",
             "type": "main",
-            "subtext": "단위,통합,기능 테스트의 차이점을 학습하고 우측에 나열된 도구들을 활용하여 테스트를 어떻게 작성하는지 배워보세요."
-        },
-        {
-            "title": "인터넷",
-            "type": "main"
-        },
-        {
-            "title": "인터넷",
-            "type": "main"
-        },
-        {
-            "title": "인터넷",
-            "type": "main"
-        },
-        {
-            "title": "인터넷",
-            "type": "main"
-        },
-        {
-            "title": "인터넷",
-            "type": "main"
-        },
-        {
-            "title": "인터넷",
-            "type": "main"
-        },
-        {
-            "title": "인터넷",
-            "type": "main"
-        },
+            "subtext": "단위,통합,기능 테스트의 차이점을 학습하고 우측에 나열된 도구들을 활용하여 테스트를 어떻게 작성하는지 배워보세요.",
+            "children": null
+        }
     ]
 }
