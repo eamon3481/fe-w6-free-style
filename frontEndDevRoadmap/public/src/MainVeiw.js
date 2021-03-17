@@ -1,4 +1,5 @@
 import { type } from "./components/units.js";
+import svg from './components/SVG.js';
 import _ from "./components/utils.js";
 
 export default class MainView {
@@ -11,32 +12,33 @@ export default class MainView {
   }
 
   init() {
-    if (this.type === type.MAIN) {
-      const $section = this.CreateSection(this.text);
-      this.parents.appendChild($section);
-      $section.appendChild(this.CreateTri());
-      if (this.children) {
-        $section.appendChild(this.CreateContainer());
-      }
+    if (this.type !== type.MAIN) return;
+    const $section = this.createSection(this.text);
+    this.parents.appendChild($section);
+    $section.appendChild();
+    if (this.children) {
+      $section.appendChild(this.createContainer());
     }
   }
 
-  CreateSection(text) {
+  createSection(text) {
     return _.genEl("SECTION", {
-      template: this.SectionTemplate(text),
+      template: this.sectionTemplate(text),
     });
   }
-  CreateContainer() {
+  createContainer() {
     return _.genEl("DIV", {
       classNames: ["Container"],
     });
   }
-  CreateTri() {
-    return _.genEl("DIV", {
+  createTri() {
+    const $tri = _.genEl("DIV", {
       classNames: ["trigle"],
     });
+    
+
   }
-  SectionTemplate(text) {
+  sectionTemplate(text) {
     return `<div class="main"><span>${text}</span></div>`;
   }
 }
