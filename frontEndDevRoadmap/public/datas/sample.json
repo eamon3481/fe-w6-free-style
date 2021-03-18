@@ -162,7 +162,7 @@
             "children": [
                 {
                     "title": "구문(Syntax)과 기본문법",
-                    "ty,pe": "list",
+                    "type": "list",
                     "subtext": null,
                     "toggle": null,
                     "step": null,
