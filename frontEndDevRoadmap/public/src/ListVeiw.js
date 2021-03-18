@@ -1,21 +1,20 @@
-import { toggles, type, step } from "./components/units.js";
-class ListView {
-  constructor(parents, type, text, subtext, toggle, step) {
-    this.type = type;
-    this.text = text;
-    this.subtext = subtext;
-    this.toggle = toggle;
-    this.step = step;
+import ListitemView from "./ListitemVeiw.js";
+export default class ListView {
+  constructor(parents, list) {
+    this.list = list;
     this.parents = parents;
   }
-
-  init() { 
-    if (this.type === type.LIST) {
-      this.parents.innerHTML += this.render(this.text, this.step, this.toggle);
-    }
-  }
-
-  render(text, step, toggle) {
-    return `<li class="list ${step}"><div class="${toggle}"></div>${text}</li>`;
+  // 중복을 피하는 방법? view 클래스 하나로 할수있을 것같은데//
+  init() {
+    this.list.forEach((listData) => {
+      new ListitemView(
+        this.parents,
+        listData.type,
+        listData.title,
+        listData.subtext,
+        listData.toggle,
+        listData.step
+      ).init();
+    });
   }
 }

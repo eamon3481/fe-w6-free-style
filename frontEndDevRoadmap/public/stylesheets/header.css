@@ -43,6 +43,9 @@ header {
       .header__detail ul li strong {
         margin-right: 0.5rem; }
 
+.Container {
+  color: #333; }
+
 .trigle {
   bottom: -5rem;
   height: 0;
@@ -50,10 +53,10 @@ header {
   border-right: 10rem solid transparent;
   border-top: 5rem solid currentColor;
   position: absolute;
-  left: 0;
+  left: -9rem;
   z-index: 10; }
 
-.line {
+.line1 {
   position: absolute;
   top: -5.5rem;
   z-index: 100;
@@ -64,7 +67,7 @@ header {
 .line2 {
   bottom: 0;
   position: absolute;
-  width: 60%;
+  width: 75%;
   height: 0.6rem;
   z-index: 100;
-  left: 20rem; }
+  left: 12rem; }

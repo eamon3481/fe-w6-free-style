@@ -253,71 +253,75 @@
             "title": "웹 보안 지식",
             "type": "main",
             "subtext": null,
-            "children": {
-                "title": "최소한의 기본 지식은 충분히 습득하세요.",
-                "type": "box",
-                "children": [
-                    {
-                        "title": "HTTPS",
-                        "type": "list",
-                        "subtext": null,
-                        "toggle": null,
-                        "step": null,
-                        "children": null
-                    },
-                    {
-                        "title": "OWASP 보안 취약점",
-                        "type": "list",
-                        "subtext": null,
-                        "toggle": null,
-                        "step": null,
-                        "children": null
-                    },
-                    {
-                        "title": "컨텐츠 보안 정책",
-                        "type": "list",
-                        "subtext": null,
-                        "toggle": null,
-                        "step": null,
-                        "children": null
-                    },
-                    {
-                        "title": "CORS",
-                        "type": "list",
-                        "subtext": null,
-                        "toggle": null,
-                        "step": null,
-                        "children": null
-                    }
-                ]
-            }
+            "children": [
+                {
+                    "title": "최소한의 기본 지식은 충분히 습득하세요.",
+                    "type": "box",
+                    "children": [
+                        {
+                            "title": "HTTPS",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": null,
+                            "step": null,
+                            "children": null
+                        },
+                        {
+                            "title": "OWASP 보안 취약점",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": null,
+                            "step": null,
+                            "children": null
+                        },
+                        {
+                            "title": "컨텐츠 보안 정책",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": null,
+                            "step": null,
+                            "children": null
+                        },
+                        {
+                            "title": "CORS",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": null,
+                            "step": null,
+                            "children": null
+                        }
+                    ]
+                }
+            ]
         },
         {
             "title": "패키지 매니저",
             "type": "main",
             "subtext": null,
-            "children": {
-                "title": "npm,yarn 모두 좋습니다. 어떤 것을 배우든 별 차이 없습니다.",
-                "type": "box",
-                "children": [
-                    {
-                        "title": "npm",
-                        "type": "list",
-                        "subtext": null,
-                        "toggle": null,
-                        "step": null,
-                        "children": null
-                    },
-                    {
-                        "title": "yarn",
-                        "type": "list",
-                        "subtext": null,
-                        "toggle": null,
-                        "step": null,
-                        "children": null
-                    }
-                ]
-            }
+            "children": [
+                {
+                    "title": "npm,yarn 모두 좋습니다. 어떤 것을 배우든 별 차이 없습니다.",
+                    "type": "box",
+                    "children": [
+                        {
+                            "title": "npm",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": null,
+                            "step": null,
+                            "children": null
+                        },
+                        {
+                            "title": "yarn",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": null,
+                            "step": null,
+                            "children": null
+                        }
+                    ]
+                }
+            ]
         },
         {
             "title": "CSS 구조(Architecture)",

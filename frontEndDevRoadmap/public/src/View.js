@@ -6,7 +6,6 @@ export default class View {
   }
 
   init() {
-
     this.data.forEach((mainData) => {
       new MainVeiw(
         this.parents,

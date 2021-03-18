@@ -1,7 +1,7 @@
 import { type } from "./components/units.js";
-import svg from './components/SVG.js';
+import svg from "./components/SVG.js";
 import _ from "./components/utils.js";
-
+import ListView from "./ListVeiw.js";
 export default class MainView {
   constructor(parents, type, text, subtext, children) {
     this.type = type;
@@ -14,10 +14,13 @@ export default class MainView {
   init() {
     if (this.type !== type.MAIN) return;
     const $section = this.createSection(this.text);
-    this.parents.appendChild($section);
-    $section.appendChild();
+    this.parents.appendChild($section); 
+    $section.appendChild(this.createTri());
+    $section.appendChild(this.createLine("line2"));
     if (this.children) {
-      $section.appendChild(this.createContainer());
+      const $containe = this.createContainer();
+      $section.appendChild($containe);
+      new ListView($containe, this.children).init();
     }
   }
 
@@ -31,12 +34,30 @@ export default class MainView {
       classNames: ["Container"],
     });
   }
+
+  createLine(num) {
+    let line;
+    switch (num) {
+      case "line1":
+        line = svg.line1;
+        break;
+      case "line2":
+        line = svg.line2;
+        break;
+    }
+    return _.genEl("DIV", {
+      classNames: [num],
+      template: line,
+    });
+  }
   createTri() {
     const $tri = _.genEl("DIV", {
       classNames: ["trigle"],
     });
-    
 
+    $tri.appendChild(this.createLine("line1"));
+
+    return $tri;
   }
   sectionTemplate(text) {
     return `<div class="main"><span>${text}</span></div>`;
