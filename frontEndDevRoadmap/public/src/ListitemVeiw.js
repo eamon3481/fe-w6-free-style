@@ -1,4 +1,4 @@
-import { toggles, type, step } from "./components/units.js";
+
 import _ from "./components/utils.js";
 import View from "./View.js";
 export default class ListitemView {
@@ -27,7 +27,7 @@ export default class ListitemView {
 
   createList(step) {
     return _.genEl("Li", {
-      classNames: ["list", `${step}`],
+      classNames: ["list", `step${step}`],
       template: this.listTemplate(this.text, this.toggle),
     });
   }
