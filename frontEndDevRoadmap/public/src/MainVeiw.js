@@ -1,6 +1,6 @@
 import svg from "./components/SVG.js";
 import _ from "./components/utils.js";
-import View from "./Veiw.js";
+import View from "./View.js";
 export default class MainView {
   constructor(parents, text, subtext, children) {
     this.text = text;
@@ -17,18 +17,18 @@ export default class MainView {
     if (this.children) {
       const $containe = this.createContainer();
       $section.appendChild($containe);
-      new View($containe, this.children).init();
+      new View(this.children, $containe, $section).init();
     }
   }
 
-  createSection(text) {
-    return _.genEl("SECTION", {
-      template: this.sectionTemplate(text),
-    });
-  }
   createContainer() {
     return _.genEl("DIV", {
       classNames: ["Container"],
+    });
+  }
+  createSection(text) {
+    return _.genEl("SECTION", {
+      template: this.sectionTemplate(text),
     });
   }
 

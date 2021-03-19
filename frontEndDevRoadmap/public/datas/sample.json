@@ -138,13 +138,13 @@
                     "subtext": null,
                     "toggle": "recomend",
                     "step": 0,
-                    "children": {
+                    "children": [{
                         "title": "Float, Positioning, Display, list module, CSS Grid, Flex list",
                         "type": "list",
                         "subtext": null,
                         "toggle": "recomend",
                         "step": 0
-                    }
+                    }]
                 }
             ]
         },
