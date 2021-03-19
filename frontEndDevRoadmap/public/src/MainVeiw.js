@@ -1,10 +1,8 @@
-import { type } from "./components/units.js";
 import svg from "./components/SVG.js";
 import _ from "./components/utils.js";
-import ListView from "./ListVeiw.js";
+import View from "./Veiw.js";
 export default class MainView {
-  constructor(parents, type, text, subtext, children) {
-    this.type = type;
+  constructor(parents, text, subtext, children) {
     this.text = text;
     this.subtext = subtext;
     this.children = children;
@@ -12,15 +10,14 @@ export default class MainView {
   }
 
   init() {
-    if (this.type !== type.MAIN) return;
     const $section = this.createSection(this.text);
-    this.parents.appendChild($section); 
+    this.parents.appendChild($section);
     $section.appendChild(this.createTri());
     $section.appendChild(this.createLine("line2"));
     if (this.children) {
       const $containe = this.createContainer();
       $section.appendChild($containe);
-      new ListView($containe, this.children).init();
+      new View($containe, this.children).init();
     }
   }
 

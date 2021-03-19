@@ -1,8 +1,7 @@
 import { toggles, type, step } from "./components/units.js";
 import _ from "./components/utils.js";
 export default class ListitemView {
-  constructor(parents, types, text, subtext, toggle, steps) {
-    this.type = types;
+  constructor(parents, text, subtext, toggle, steps) {
     this.text = text;
     this.subtext = subtext;
     this.toggle = toggle;
@@ -11,7 +10,6 @@ export default class ListitemView {
   }
 
   init() {
-    if (this.type !== type.LIST) return;
     this.parents.appendChild(this.createList(this.tep));
   }
 

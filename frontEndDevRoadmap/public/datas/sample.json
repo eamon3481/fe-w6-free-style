@@ -10,48 +10,48 @@
                     "title": "인터넷은 어떻게 작동될까요?",
                     "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
+                    "step": 0,
                     "children": null
                 },
                 {
                     "title": "HTTP는 무엇일까요?",
                     "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
+                    "step": 0,
                     "children": null
                 },
                 {
                     "title": "브라우져의 동작원리",
                     "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
+                    "step": 0,
                     "children": null
                 },
                 {
                     "title": "DNS와 작동원리",
                     "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
+                    "step": 0,
                     "children": null
                 },
                 {
                     "title": "Domain Name은 무엇일까요?",
                     "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
+                    "step": 0,
                     "children": null
                 },
                 {
                     "title": "hosting은 무엇일까요?",
                     "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
+                    "step": 0,
                     "children": null
                 }
             ]
@@ -65,48 +65,48 @@
                     "title": "기초배우기",
                     "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
+                    "step": 0,
                     "children": null
                 },
                 {
                     "title": "의미론적(Semantic)인 HTML 작성",
                     "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "whenever",
+                    "step": 0,
                     "children": null
                 },
                 {
                     "title": "폼과 유효성 검사",
                     "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
+                    "step": 0,
                     "children": null
                 },
                 {
                     "title": "컨벤션과 모범 사례(Best Practice)",
                     "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
+                    "step": 0,
                     "children": null
                 },
                 {
                     "title": "접근성",
                     "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "whenever",
+                    "step": 0,
                     "children": null
                 },
                 {
                     "title": "기본 SEO",
                     "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "whenever",
+                    "step": 0,
                     "children": null
                 }
             ]
@@ -120,37 +120,30 @@
                     "title": "기초 배우기",
                     "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
+                    "step": 0,
                     "children": null
                 },
                 {
                     "title": "레이아웃 만들기",
                     "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
+                    "step": 0,
                     "children": null
                 },
                 {
                     "title": "반응형 디자인과 Media Queries",
                     "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
+                    "step": 0,
                     "children": {
-                        "title": [
-                            "Float",
-                            "Positioning",
-                            "Display",
-                            "Box module",
-                            "CSS Grid",
-                            "Flex Box"
-                        ],
-                        "type": "sublists",
+                        "title": "Float, Positioning, Display, list module, CSS Grid, Flex list",
+                        "type": "list",
                         "subtext": null,
-                        "toggle": null,
-                        "step": null
+                        "toggle": "recomend",
+                        "step": 0
                     }
                 }
             ]
@@ -164,39 +157,39 @@
                     "title": "구문(Syntax)과 기본문법",
                     "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
+                    "step": 0,
                     "children": null
                 },
                 {
                     "title": "DOM 조작 방법 배우기",
                     "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
+                    "step": 0,
                     "children": null
                 },
                 {
                     "title": "Fetch API / Ajax (XHR) 배우기",
                     "type": "list",
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
+                    "step": 0,
                     "children": null
                 },
                 {
                     "title": "모듈러 javascript와 ES6+ 배우기",
                     "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
+                    "step": 0,
                     "children": null
                 },
                 {
                     "title": "개념 이해하기",
                     "type": "list",
                     "subtext": "hoisting, Event Bubbling, scope, prototype,Shadow Dom, strict",
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
+                    "step": 0,
                     "children": null
                 }
             ]
@@ -208,41 +201,40 @@
             "children": [
                 {
                     "title": "Git 기본 사용법",
-                    "type": "main",
+                    "type": "list",
                     "subtext": null,
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
+                    "step": 0,
                     "children": null
                 },
                 {
                     "title": "저장소 호스팅 서비스",
-                    "type": "main",
+                    "type": "box",
                     "subtext": "계정 생성 및 깃허브(github) 사용 방법 배우기",
-                    "toggle": null,
-                    "step": null,
+                    "toggle": "recomend",
                     "children": [
                         {
                             "title": "GitHub",
                             "type": "list",
                             "subtext": null,
-                            "toggle": null,
-                            "step": null,
+                            "toggle": "recomend",
+                            "step": 0,
                             "children": null
                         },
                         {
                             "title": "Gitlab",
                             "type": "list",
                             "subtext": null,
-                            "toggle": null,
-                            "step": null,
+                            "toggle": "alter",
+                            "step": 0,
                             "children": null
                         },
                         {
                             "title": "Bitbucket",
                             "type": "list",
                             "subtext": null,
-                            "toggle": null,
-                            "step": null,
+                            "toggle": "alter",
+                            "step": 0,
                             "children": null
                         }
                     ]
@@ -257,37 +249,39 @@
                 {
                     "title": "최소한의 기본 지식은 충분히 습득하세요.",
                     "type": "box",
+                    "subtext": null,
+                    "toggle": null,
                     "children": [
                         {
                             "title": "HTTPS",
                             "type": "list",
                             "subtext": null,
-                            "toggle": null,
-                            "step": null,
+                            "toggle": "whenever",
+                            "step": 0,
                             "children": null
                         },
                         {
                             "title": "OWASP 보안 취약점",
                             "type": "list",
                             "subtext": null,
-                            "toggle": null,
-                            "step": null,
+                            "toggle": "whenever",
+                            "step": 0,
                             "children": null
                         },
                         {
                             "title": "컨텐츠 보안 정책",
                             "type": "list",
                             "subtext": null,
-                            "toggle": null,
-                            "step": null,
+                            "toggle": "whenever",
+                            "step": 0,
                             "children": null
                         },
                         {
                             "title": "CORS",
                             "type": "list",
                             "subtext": null,
-                            "toggle": null,
-                            "step": null,
+                            "toggle": "whenever",
+                            "step": 0,
                             "children": null
                         }
                     ]
@@ -302,21 +296,23 @@
                 {
                     "title": "npm,yarn 모두 좋습니다. 어떤 것을 배우든 별 차이 없습니다.",
                     "type": "box",
+                    "subtext": null,
+                    "toggle": null,
                     "children": [
                         {
                             "title": "npm",
                             "type": "list",
                             "subtext": null,
-                            "toggle": null,
-                            "step": null,
+                            "toggle": "recomend",
+                            "step": 0,
                             "children": null
                         },
                         {
                             "title": "yarn",
                             "type": "list",
                             "subtext": null,
-                            "toggle": null,
-                            "step": null,
+                            "toggle": "recomend",
+                            "step": 0,
                             "children": null
                         }
                     ]
