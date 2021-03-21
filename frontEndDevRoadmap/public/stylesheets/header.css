@@ -4,6 +4,9 @@ li {
   flex-direction: column;
   justify-content: center; }
 
+input:focus {
+  outline: none; }
+
 header {
   position: relative;
   padding: 3rem 2rem 1.5rem 2rem;
@@ -18,6 +21,48 @@ header {
   font-size: 3.5rem;
   padding-left: 2rem;
   color: wheat; }
+
+.loggin-section {
+  transition: 1s;
+  right: -15rem;
+  position: fixed;
+  z-index: 999;
+  top: 22.5rem;
+  display: flex;
+  align-items: center; }
+  .loggin-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .loggin-section div .toggle-btn {
+      writing-mode: vertical-lr;
+      box-sizing: border-box;
+      cursor: pointer;
+      height: 7.5rem;
+      width: 2.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1rem 0 0 1rem;
+      font-size: 1rem;
+      font-weight: 700; }
+  .loggin-section .loggin__inner {
+    background-color: wheat;
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+    .loggin-section .loggin__inner form input {
+      border: 0.3rem solid #b8b5ff;
+      border-radius: 0.6rem;
+      padding: 0.5rem 0.5rem;
+      margin-bottom: 1rem; }
+    .loggin-section .loggin__inner form button {
+      background-color: #b8b5ff;
+      border-radius: 0.4rem;
+      padding: 0.5rem 4.5rem; }
 
 .header__detail {
   color: white;
@@ -100,3 +145,9 @@ header {
   height: 0.6rem;
   z-index: 100;
   left: 12rem; }
+
+.selected {
+  background-color: wheat; }
+
+.unselected {
+  background-color: gainsboro; }
