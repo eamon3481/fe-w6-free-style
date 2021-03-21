@@ -138,13 +138,15 @@
                     "subtext": null,
                     "toggle": "recomend",
                     "step": 0,
-                    "children": [{
-                        "title": "Float, Positioning, Display, list module, CSS Grid, Flex list",
-                        "type": "list",
-                        "subtext": null,
-                        "toggle": "recomend",
-                        "step": 0
-                    }]
+                    "children": [
+                        {
+                            "title": "Float, Positioning, Display, list module, CSS Grid, Flex list",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "recomend",
+                            "step": 0
+                        }
+                    ]
                 }
             ]
         },
@@ -323,49 +325,776 @@
             "title": "CSS 구조(Architecture)",
             "type": "main",
             "subtext": "최신 프레임워크와 CSS-in-JS를 사용한다면 걱정할 필요가 없지만 그럼에도 불구하고 BEM 방법론에 익숙해지는 것은 좋은 생각입니다.",
-            "children": null
+            "children": [
+                {
+                    "title": "BEM",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "whenever",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "OOCSS",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "dontrecom",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "SMACSS",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "dontrecom",
+                    "step": 0,
+                    "children": null
+                }
+            ]
         },
         {
             "title": "CSS 전처리기 (CSS preprocessor)",
             "type": "main",
             "subtext": "최신 프레임워크들이 CSS-in-JS를 향해 더욱 더 밀어 붙이고 있어 전처리기들이 필요할지 모르겠지만 여전히 알고있는 것은 좋습니다.",
-            "children": null
+            "children": [
+                {
+                    "title": "Sass",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "whenever",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "PostCSS",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "whenever",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "Less",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "dontrecom",
+                    "step": 0,
+                    "children": null
+                }
+            ]
         },
         {
-            "title": "빌드 도구",
+            "title": "빌드도구",
             "type": "main",
             "subtext": null,
-            "children": null
+            "children": [
+                {
+                    "title": "테스크 러너",
+                    "type": "box",
+                    "subtext": null,
+                    "toggle": null,
+                    "children": [
+                        {
+                            "title": "npm scripts",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "recomend",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Gulp",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "dontrecom",
+                            "step": 0,
+                            "children": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Linters 및 Formatters",
+                    "type": "box",
+                    "subtext": null,
+                    "toggle": "dontrecom",
+                    "children": [
+                        {
+                            "title": "Prettier",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "whenever",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "ESLint",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "whenever",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Standard JS",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "dontrecom",
+                            "step": 0,
+                            "children": null
+                        }
+                    ]
+                },
+                {
+                    "title": "모듈 번들러",
+                    "type": "box",
+                    "subtext": null,
+                    "toggle": null,
+                    "children": [
+                        {
+                            "title": "Webpack",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "recomend",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Rollup",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "alter",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Parcel",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "alter",
+                            "step": 0,
+                            "children": null
+                        }
+                    ]
+                }
+            ]
         },
         {
             "title": "프레임워크 선택",
             "type": "main",
             "subtext": null,
-            "children": null
+            "children": [
+                {
+                    "title": "React.js",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "recomend",
+                    "step": 0,
+                    "children": [
+                        {
+                            "title": "Redux",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "recomend",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "MobX",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "alter",
+                            "step": 0,
+                            "children": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Angular",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "alter",
+                    "step": 0,
+                    "children": [
+                        {
+                            "title": "RxJS",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "alter",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "NgRx",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "alter",
+                            "step": 0,
+                            "children": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Vue.js",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "alter",
+                    "step": 0,
+                    "children": [
+                        {
+                            "title": "VueX",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "alter",
+                            "step": 0,
+                            "children": null
+                        }
+                    ]
+                }
+            ]
         },
         {
             "title": "현대의 CSS",
             "type": "main",
             "subtext": null,
-            "children": null
+            "children": [
+                {
+                    "title": "Styled Components",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "recomend",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "CSS Modules",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "recomend",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "Styled JSX",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "alter",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "Emotion",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "recomend",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "Rodium",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "dontrecom",
+                    "step": 0,
+                    "children": null
+                }
+            ]
         },
         {
             "title": "웹 컴포넌트",
             "type": "main",
             "subtext": null,
-            "children": null
+            "children": [
+                {
+                    "title": "HTML Templates",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "whenever",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "Custom Elements",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "whenever",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "Shadow Dom",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "whenever",
+                    "step": 0,
+                    "children": null
+                }
+            ]
         },
         {
             "title": "CSS 프레임워크",
             "type": "main",
             "subtext": null,
-            "children": null
+            "children": [
+                {
+                    "title": "JS기반으로 프레임워크 기반의 JS 어플리케이션과 함께 사용가능합니다.",
+                    "type": "box",
+                    "subtext": null,
+                    "toggle": null,
+                    "children": [
+                        {
+                            "title": "Reactstrap",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "recomend",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Material UI",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "recomend",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Tailwind CSS",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "alter",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Chakra",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "alter",
+                            "step": 0,
+                            "children": null
+                        }
+                    ]
+                },
+                {
+                    "title": "CSS 기반 프레임 워크이며 기본적인 JS 컴포넌트는 함께 제공되지 않습니다.",
+                    "type": "box",
+                    "subtext": null,
+                    "toggle": null,
+                    "children": [
+                        {
+                            "title": "Bootstrap",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "recomend",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Materialize CSS",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "alter",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Bulma",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "alter",
+                            "step": 0,
+                            "children": null
+                        }
+                    ]
+                }
+            ]
         },
         {
             "title": "앱을 테스트 하세요",
             "type": "main",
             "subtext": "단위,통합,기능 테스트의 차이점을 학습하고 우측에 나열된 도구들을 활용하여 테스트를 어떻게 작성하는지 배워보세요.",
-            "children": null
+            "children": [
+                {
+                    "title": "이것만으로도 모든 테스트 사항을 충족 시킬 수 있습니다.",
+                    "type": "box",
+                    "subtext": null,
+                    "toggle": null,
+                    "children": [
+                        {
+                            "title": "Jest",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "recomend",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "react-testing-library",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "recomend",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Cypress",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "recomend",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Enzyme",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "recomend",
+                            "step": 0,
+                            "children": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "타입 검사",
+            "type": "main",
+            "subtext": null,
+            "children": [
+                {
+                    "title": "TypeScript",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "recomend",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "Flow",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "dontrecom",
+                    "step": 0,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "title": "Progressive Web Apps",
+            "type": "main",
+            "subtext": null,
+            "children": [
+                {
+                    "title": "PWA에서 사용되는 다양한 웹 api 배우기",
+                    "type": "box",
+                    "subtext": null,
+                    "toggle": null,
+                    "children": [
+                        {
+                            "title": "Storage",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "whenever",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Web Sockets",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "whenever",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Service Workers",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "whenever",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Location",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "whenever",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Notifications",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "whenever",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Device Orientation",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "whenever",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Payments",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "whenever",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Credential",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "whenever",
+                            "step": 0,
+                            "children": null
+                        }
+                    ]
+                },
+                {
+                    "title": "계산, 측정 그리고 성능향상",
+                    "type": "box",
+                    "subtext": null,
+                    "toggle": null,
+                    "children": [
+                        {
+                            "title": "PRPL Pattern",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "whenever",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "RAIL Model",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "whenever",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "성능 분석",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "whenever",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Using Lighthouse",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "whenever",
+                            "step": 0,
+                            "children": null
+                        },
+                        {
+                            "title": "Using Dev tool",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "whenever",
+                            "step": 0,
+                            "children": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "서버 사이드 렌더링(SSR)",
+            "type": "main",
+            "subtext": null,
+            "children": [
+                {
+                    "title": "React.js",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "recomend",
+                    "step": 0,
+                    "children": [
+                        {
+                            "title": "Next.js",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "recomend",
+                            "step": 0,
+                            "children": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Angular",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "alter",
+                    "step": 0,
+                    "children": [
+                        {
+                            "title": "Universal",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "alter",
+                            "step": 0,
+                            "children": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Vue.js",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "alter",
+                    "step": 0,
+                    "children": [
+                        {
+                            "title": "Nuxt.js",
+                            "type": "list",
+                            "subtext": null,
+                            "toggle": "alter",
+                            "step": 0,
+                            "children": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "GraphQL",
+            "type": "main",
+            "subtext": null,
+            "children": [
+                {
+                    "title": "Apollo",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "recomend",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "Relay Modern",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "alter",
+                    "step": 0,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "title": "정적사이트 생성기",
+            "type": "main",
+            "subtext": null,
+            "children": [
+                {
+                    "title": "Next.js",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "recomend",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "Gatsby.js",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "recomend",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "Nuxt.js",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "alter",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": " Vuepress",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "alter",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "JekyII",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "alter",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "Hugo",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "alter",
+                    "step": 0,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "title": "모바일 어플리케이션",
+            "type": "main",
+            "subtext": null,
+            "children": [
+                {
+                    "title": "React Native",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "recomend",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "NativeScript",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "alter",
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "Flutter",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": null,
+                    "step": 0,
+                    "children": null
+                },
+                {
+                    "title": "Ionic",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": null,
+                    "step": 0,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "title": "데스크탑 어플리케이션",
+            "type": "main",
+            "subtext": null,
+            "children": [
+                {
+                    "title": "Electron",
+                    "type": "list",
+                    "subtext": null,
+                    "toggle": "recomend",
+                    "step": 0,
+                    "children": null
+                }
+            ]
         }
     ]
 }

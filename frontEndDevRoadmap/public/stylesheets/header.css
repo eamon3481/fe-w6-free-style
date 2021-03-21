@@ -1,3 +1,9 @@
+li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+
 header {
   position: relative;
   padding: 3rem 2rem 1.5rem 2rem;
@@ -39,7 +45,9 @@ header {
     .header__detail ul li {
       margin-bottom: 0.5rem;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      flex-direction: row;
+      justify-content: start; }
       .header__detail ul li strong {
         margin-right: 0.5rem; }
 

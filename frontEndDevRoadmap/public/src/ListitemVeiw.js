@@ -23,6 +23,7 @@ export default class ListitemView {
   }
 
   listTemplate(text, toggle) {
+    if (!toggle) return `${text}`;
     return `<div class="${toggle} toggle position"><i class="fas fa-check"></i></div>${text}`;
   }
 
