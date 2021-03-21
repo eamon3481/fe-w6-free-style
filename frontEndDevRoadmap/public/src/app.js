@@ -9,17 +9,13 @@ async function initViews() {
     await fetch(DATA_URL) //
       .then((res) => res.json())
       .then((json) => {
-        SaveTolocalstorge(json.author, json.map);
+        _.save("author", json.author);
+        _.save("map", JSON.stringify(json.map));
         new View(json.map, _.$("body")).init();
       });
-  } else { 
+  } else {
     const map = JSON.parse(localStorage.getItem("map"));
     new View(map, _.$("body")).init();
   }
   new ClickEvent(_.$("body")).init();
-}
-
-function SaveTolocalstorge(author, data) {
-  localStorage.setItem("author", author);
-  localStorage.setItem("map", JSON.stringify(data));
 }

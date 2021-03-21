@@ -1,6 +1,6 @@
-
 import _ from "./components/utils.js";
 import View from "./View.js";
+import svg from "./components/SVG.js";
 export default class ListitemView {
   constructor(grandparents, parents, text, subtext, toggle, steps, children) {
     this.text = text;
@@ -13,11 +13,12 @@ export default class ListitemView {
   }
 
   init() {
-    this.parents.appendChild(this.createList(this.step));
+    const $li = this.createli();
+    this.parents.appendChild($li);
     if (this.children) {
       const $containe = this.createContainer();
-      this.grandparent.appendChild($containe);
-      new View(this.children, $containe, this.grandparent).init();
+      $li.appendChild($containe);
+      new View(this.children, $containe, this.parents).init();
     }
   }
 
@@ -25,15 +26,22 @@ export default class ListitemView {
     return `<div class="${toggle} toggle position"><i class="fas fa-check"></i></div>${text}`;
   }
 
+  createli() {
+    const $li = _.genEl("LI");
+    $li.appendChild(this.createList(this.step));
+    return $li;
+  }
+
   createList(step) {
-    return _.genEl("Li", {
+    return _.genEl("DIV", {
       classNames: ["list", `step${step}`],
       template: this.listTemplate(this.text, this.toggle),
     });
   }
   createContainer() {
     return _.genEl("DIV", {
-      classNames: ["Container"],
+      classNames: ["Container", "child"],
+      template: svg.arrow,
     });
   }
 }

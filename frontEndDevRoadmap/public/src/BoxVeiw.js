@@ -1,4 +1,3 @@
-
 import _ from "./components/utils.js";
 import View from "./View.js";
 export default class BoxVeiw {
@@ -15,7 +14,9 @@ export default class BoxVeiw {
     const $box = this.createBox();
     this.parents.appendChild($box);
     if (this.children) {
-      new View(this.children, $box, this.grandparent).init();
+      const $containe = this.createContainer();
+      $box.appendChild($containe);
+      new View(this.children, $containe, this.parents).init();
     }
   }
   BoxTemplate(toggle, text, subtext) {

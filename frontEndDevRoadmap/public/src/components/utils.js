@@ -22,6 +22,7 @@ const _ = {
     if (template) $el.innerHTML = template;
     return $el;
   },
+  save: (key, data) => localStorage.setItem(key, data),
 };
 
 export default _;
