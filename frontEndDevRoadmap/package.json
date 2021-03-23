@@ -2,14 +2,16 @@
   "name": "frontenddevroadmap",
   "version": "0.0.0",
   "private": true,
-  "type": "es6",  
+  "type": "es6",
   "scripts": {
     "build-css": "node-sass -w public/stylesheets/sass -o public/stylesheets/",
     "watch": "nodemon -e sass -x \"npm run build-css\"",
-    "start": "nodemon ./bin/www"
-  }, 
+    "sever:start": "nodemon ./bin/www",
+    "start": "concurrently --kill-others-on-fail \"npm run watch\" \"npm run sever:start\" "
+  },
   "dependencies": {
     "cookie-parser": "~1.4.4",
+    "concurrently": "^6.0.0",
     "debug": "~2.6.9",
     "dotenv": "^8.2.0",
     "ejs": "~2.6.1",

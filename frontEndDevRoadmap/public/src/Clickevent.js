@@ -1,5 +1,5 @@
 import _ from "./components/utils.js";
-
+import LoginView from "./loginView.js";
 export default class ClickEvent {
   constructor(parents) {
     this.parents = parents;
@@ -13,8 +13,21 @@ export default class ClickEvent {
     if (target.classList[0] === "list") {
       this.replaceClass(target);
     }
-  }
+    const $login = _.$(".loggin-section", this.parents);
 
+    if (target.closest(".loggin-section")) {
+      this.popupLogin($login);
+      new LoginView(target.closest("div")).init();
+    } else {
+      this.removeLogin($login);
+    }
+  }
+  removeLogin(target) {
+    target.removeAttribute("style");
+  }
+  popupLogin(target) {
+    target.style.transform = "translateX(-15rem)";
+  }
   reaplaceStep(target, stepnum) {
     const roadMap = JSON.parse(localStorage.getItem("map"));
     const dfs = (item, text, num) => {
