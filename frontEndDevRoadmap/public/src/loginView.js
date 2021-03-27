@@ -12,6 +12,7 @@ export default class loginView {
   }
 
   checkTarget(target) {
+    if (this.target.classList[0] !== "toggle-btn") return;
     if (target.classList[1] === "selected") return;
     this.switchBtn(target);
     this.renderView(target);
