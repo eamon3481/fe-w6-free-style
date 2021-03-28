@@ -4,15 +4,15 @@ export default class loginView {
   constructor(target) {
     this.target = target;
     this.loginSection = target.offsetParent;
-    this.loginInner = this.loginSection.children[1];
+    this.loginInner;
   }
-
   init() {
     this.checkTarget(this.target);
   }
 
   checkTarget(target) {
     if (this.target.classList[0] !== "toggle-btn") return;
+    this.loginInner = this.loginSection.children[1];
     if (target.classList[1] === "selected") return;
     this.switchBtn(target);
     this.renderView(target);
@@ -39,10 +39,10 @@ export default class loginView {
     return `
     <form action="/" method="post">
         <div>
-          <input type="text" id="name" placeholder="Name" />
+          <input type="text" name="Name" id="name" placeholder="Name" />
         </div>
         <div>
-          <input type="password" id="password" placeholder="Password" />
+          <input type="password" name="password" id="password" placeholder="Password" />
         </div>
         <button type="submit">Log In</button>
       </form>
@@ -51,18 +51,18 @@ export default class loginView {
 
   TemplateSignView() {
     return ` 
-    <form action="/" method="post">
+    <form action="/resister" method="post">
     
     <div>
-      <input type="text" id="name" placeholder="Name" />
+      <input type="text" name="Name" id="name" placeholder="Name" />
     </div>
     
     <div>
-      <input type="password" id="password" placeholder="Password" />
+      <input type="password" name="password" id="password" placeholder="Password" />
     </div>
     
     <div>
-    <input type="password" id="password2" placeholder="Password" />
+    <input type="password" name="password2" id="password2" placeholder="Password" />
     </div>
     
     <button type="submit">Sign In</button>
