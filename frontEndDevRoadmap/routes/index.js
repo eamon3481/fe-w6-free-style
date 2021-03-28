@@ -4,14 +4,14 @@ const data = require("../public/datas/sample.json");
 const db = require("../sever/db.js");
 db();
 const User = require("../sever/server.js");
-//const querystring = require("querystring");
+const querystring = require("querystring");
 /* GET home page. */
 router.get("/", function (req, res, next) {
   res.render("index", { title: "Dev-Roadmap" });
 });
 
 router.get("/sample.json", (req, res, next) => {
-  res.send(data);
+  res.send(data); 
 });
 
 router.post("/resister", async (req, res) => {
@@ -25,12 +25,12 @@ router.post("/resister", async (req, res) => {
   });
 
   try {
-    user = await user.save();
     console.log(user);
-  //  const query = querystring.stringify({
- //     name: post.Name,
-  //  });
-   // res.redirect("/user?" + query);
+    user = await user.save();
+    const query = querystring.stringify({
+      name: post.Name,
+    });
+    res.redirect("/user?" + query);
     console.log("sucsess");
   } catch (e) {  
     console.log(e);
