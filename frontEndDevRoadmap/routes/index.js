@@ -7,7 +7,7 @@ const User = require("../sever/server.js");
 const querystring = require("querystring");
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Dev-Roadmap" });
+  res.render("index", { title: "Dev-Road-Map" });
 });
 
 router.get("/sample.json", (req, res, next) => {
@@ -17,18 +17,21 @@ router.get("/sample.json", (req, res, next) => {
 router.get("/alert", (req, res, next) => {
   res.send(
     `<script type="text/javascript">
-  alert("You need to confirm password!!");
+  alert("ERROR:: You need to confirm password!!");
   window.location.href = "http://localhost:3000";
 </script>`
   );
   res.redirect(`/`);
 });
 
+//Log-in
+router.post("/LogIn", async (req, res) => {
+  const post = req.body;
+});
+//Sign-in
 router.post("/resister", async (req, res) => {
   const post = req.body;
-  if (post.password !== post.password2) {
-    res.redirect(`/alert`);
-  }
+  if (post.password !== post.password2) res.redirect(`/alert`);
 
   let user = new User({
     Name: post.Name,
