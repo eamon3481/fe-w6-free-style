@@ -11,14 +11,25 @@ router.get("/", function (req, res, next) {
 });
 
 router.get("/sample.json", (req, res, next) => {
-  res.send(data); 
+  res.send(data);
+});
+
+router.get("/alert", (req, res, next) => {
+  res.send(
+    `<script type="text/javascript">
+  alert("You need to confirm password!!");
+  window.location.href = "http://localhost:3000";
+</script>`
+  );
+  res.redirect(`/`);
 });
 
 router.post("/resister", async (req, res) => {
   const post = req.body;
   if (post.password !== post.password2) {
-    res.redirect(`/`);
+    res.redirect(`/alert`);
   }
+
   let user = new User({
     Name: post.Name,
     password: post.password,
@@ -32,7 +43,7 @@ router.post("/resister", async (req, res) => {
     });
     res.redirect("/user?" + query);
     console.log("sucsess");
-  } catch (e) {  
+  } catch (e) {
     console.log(e);
   }
 });
