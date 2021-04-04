@@ -63,16 +63,17 @@ router.post("/resister", async (req, res) => {
   let user = new User({
     Name: post.Name,
     password: post.password,
+    map: JSON.stringify(data.map),
   });
 
   try {
     console.log(user);
     user = await user.save();
+
     const query = querystring.stringify({
       name: post.Name,
     });
     res.redirect("/user?" + query);
-    console.log("sucsess");
   } catch (e) {
     console.log(e);
   }
