@@ -14,7 +14,17 @@ router.get("/sample.json", (req, res, next) => {
   res.send(data);
 });
 
-router.get("/alert", (req, res, next) => {
+router.get("/IDAlert", (req, res, next) => {
+  res.send(
+    `<script type="text/javascript">
+  alert("ERROR:: You need to confirm NAME!!");
+  window.location.href = "http://localhost:3000";
+</script>`
+  );
+  res.redirect(`/`);
+});
+
+router.get("/passwordConfirmAlert", (req, res, next) => {
   res.send(
     `<script type="text/javascript">
   alert("ERROR:: You need to confirm password!!");
@@ -27,11 +37,28 @@ router.get("/alert", (req, res, next) => {
 //Log-in
 router.post("/LogIn", async (req, res) => {
   const post = req.body;
+  console.log(post.Name);
+  User.find()
+    .where("Name")
+    .equals(post.Name)
+    .exec()
+    .then(function (result) {
+      if (post.password !== result[0].password) {
+        res.redirect(`/passwordConfirmAlert`);
+      }
+      const query = querystring.stringify({
+        name: post.Name,
+      });
+      res.redirect("/user?" + query);
+    })
+    .catch(function (err) {
+      res.redirect(`/IDAlert`);
+    });
 });
 //Sign-in
 router.post("/resister", async (req, res) => {
   const post = req.body;
-  if (post.password !== post.password2) res.redirect(`/alert`);
+  if (post.password !== post.password2) res.redirect(`/passwordConfirmAlert`);
 
   let user = new User({
     Name: post.Name,

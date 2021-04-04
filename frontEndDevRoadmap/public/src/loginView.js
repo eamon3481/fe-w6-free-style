@@ -37,7 +37,7 @@ export default class loginView {
 
   TemplateLoginView() {
     return `
-    <form action="/" method="post">
+    <form action="/LogIn" method="post">
         <div>
           <input type="text" name="Name" id="name" placeholder="Name" />
         </div>
